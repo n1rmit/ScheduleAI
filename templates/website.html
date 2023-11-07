@@ -1,7 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <body>
-<title>ScheduleAI</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Basic Website</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+       
+        #tabs {
+            background: #333;
+            text-align: center;
+            padding: 10px;
+        }
+        #tabs ul {
+            display: inline;
+        }
+        #tabs ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        #tabs ul li:last-child {
+            margin-right: 0;
+        }
+        
+        #login-container {
+            background: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+        }
+        #login-container form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #login-container label, #login-container input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #login-container input[type="text"], #login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #login-container button {
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #login-container button:hover {
+            background: #555;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Website</h1>
+        <nav id="tabs">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home">
+        <h2>Home Page</h2>
+        <!-- Add your home page content here -->
+    </div>
+    <div id="about">
+        <h2>About Page</h2>
+        <!-- Add your about page content here -->
+    </div>
+    <div id="contact">
+        <h2>Contact Page</h2>
+        <!-- Add your contact page content here -->
+    </div>
+    <div id="login-container">
+        <h2>Login Page</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
